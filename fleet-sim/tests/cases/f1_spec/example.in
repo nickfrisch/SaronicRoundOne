@@ -1,0 +1,27 @@
+# Follow-on 1 worked example from the project description.
+{"command": "init", "parameters": {"travel_times": [[0,4,7],[4,0,3],[7,3,0]], "dock_throughput": [2,4,1], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 2}]}}
+# tick 1: 1 unit to dest 2 and 1 unit to dest 1 arrive at location 0
+{"command": "tick", "parameters": {"cargo_manifest": [{"location": 0, "destination": 2, "quantity": 1}, {"location": 0, "destination": 1, "quantity": 1}]}}
+# dock v1 at location 0 — planned state docked, committed still idle
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+# load both units (2 ops, throughput=2)
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "undock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+# send v1 to location 2 — arrives at tick 4 + 7 = 11
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+# unload dest 2 at location 2 (delivery, 1 op, throughput=1)
+{"command": "unload", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "tick", "parameters": {}}

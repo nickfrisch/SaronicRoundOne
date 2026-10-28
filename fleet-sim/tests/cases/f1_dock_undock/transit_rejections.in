@@ -1,0 +1,14 @@
+# A vessel in transit can't dock, undock, or move cargo; it docks after arriving.
+{"command": "init", "parameters": {"travel_times": [[0,4,7],[4,0,3],[7,3,0]], "dock_throughput": [2,4,1], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 2}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v2", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "dock", "parameters": {"vessel_id": "v2"}}
+{"command": "undock", "parameters": {"vessel_id": "v2"}}
+{"command": "load", "parameters": {"vessel_id": "v2", "destination": 0}}
+{"command": "unload", "parameters": {"vessel_id": "v2", "destination": 0}}
+{"command": "swap", "parameters": {"vessel_id": "v2", "load_destination": 0, "unload_destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+# arrives at tick 3 and can dock on the arrival tick
+{"command": "dock", "parameters": {"vessel_id": "v2"}}
+{"command": "tick", "parameters": {}}

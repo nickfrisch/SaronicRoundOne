@@ -1,0 +1,26 @@
+# Every way set_destination can be rejected. Rejections never change planned state.
+{"command": "init", "parameters": {"travel_times": [[0,2,5],[2,0,4],[5,4,0]], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 1}]}}
+# --- vessel_id ---
+{"command": "set_destination", "parameters": {"destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": null, "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": 1, "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": ["v1"], "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "v3", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "V1", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "", "destination": 1}}
+# --- destination type ---
+{"command": "set_destination", "parameters": {"vessel_id": "v1"}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": null}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": "1"}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1.0}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1.5}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": true}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": [1]}}
+# --- destination range ---
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 3}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": -1}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2147483648}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": -9223372036854775808}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 18446744073709551615}}
+# planned state untouched by all of the above
+{"command": "get_state", "parameters": {}}

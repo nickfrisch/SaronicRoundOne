@@ -1,0 +1,10 @@
+# dock_throughput must be N positive integers.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,2,3], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": 2, "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,0], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,-1], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,"2"], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,null], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,18446744073709551615], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,2147483647], "vessels": []}}

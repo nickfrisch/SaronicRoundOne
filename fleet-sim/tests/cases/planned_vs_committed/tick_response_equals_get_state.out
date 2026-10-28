@@ -1,0 +1,7 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"a":{"state":"idle","location":0},"b":{"state":"idle","location":2}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"a":{"state":"transit","from":0,"to":1,"arrives_at_tick":3},"b":{"state":"idle","location":2}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"a":{"state":"transit","from":0,"to":1,"arrives_at_tick":3},"b":{"state":"transit","from":2,"to":0,"arrives_at_tick":1}}}}
+{"status":"ok","payload":{"tick":1,"vessels":{"a":{"state":"transit","from":0,"to":1,"arrives_at_tick":3},"b":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":1,"vessels":{"a":{"state":"transit","from":0,"to":1,"arrives_at_tick":3},"b":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":2,"vessels":{"a":{"state":"transit","from":0,"to":1,"arrives_at_tick":3},"b":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":2,"vessels":{"a":{"state":"transit","from":0,"to":1,"arrives_at_tick":3},"b":{"state":"idle","location":0}}}}

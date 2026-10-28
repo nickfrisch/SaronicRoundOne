@@ -1,0 +1,14 @@
+# A swap is one op, so a throughput-1 dock allows exactly one inventory-changing swap per tick.
+{"command": "init", "parameters": {"travel_times": [[0,1,1],[1,0,1],[1,1,0]], "dock_throughput": [1,1,1], "vessels": [{"id": "a", "location": 0}], "cargo_manifest": [{"location": 0, "destination": 1, "quantity": 2}, {"location": 0, "destination": 2, "quantity": 2}]}}
+{"command": "dock", "parameters": {"vessel_id": "a"}}
+{"command": "tick", "parameters": {}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 2}}
+{"command": "tick", "parameters": {}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 2}}
+{"command": "tick", "parameters": {}}
+# a carries [2x2], dock 0 has [1x2]
+{"command": "swap", "parameters": {"vessel_id": "a", "load_destination": 1, "unload_destination": 2}}
+{"command": "swap", "parameters": {"vessel_id": "a", "load_destination": 1, "unload_destination": 2}}
+# a same-destination swap changes nothing, so it costs 0 ops and is still allowed
+{"command": "swap", "parameters": {"vessel_id": "a", "load_destination": 2, "unload_destination": 2}}
+{"command": "tick", "parameters": {}}

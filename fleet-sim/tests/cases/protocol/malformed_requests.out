@@ -1,0 +1,18 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"request must be an object with a string \"command\""}}
+{"status":"error","payload":{"message":"\"parameters\" must be an object"}}
+{"status":"error","payload":{"message":"\"parameters\" must be an object"}}
+{"status":"error","payload":{"message":"\"parameters\" must be an object"}}
+{"status":"error","payload":{"message":"unknown command: TICK"}}
+{"status":"error","payload":{"message":"unknown command: tick "}}
+{"status":"error","payload":{"message":"unknown command: "}}
+{"status":"error","payload":{"message":"unknown command: get_state_now"}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}

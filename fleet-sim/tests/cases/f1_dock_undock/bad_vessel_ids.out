@@ -1,0 +1,7 @@
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"message":"vessel_id must be a string"},"status":"error"}
+{"payload":{"message":"vessel_id must be a string"},"status":"error"}
+{"payload":{"message":"unknown vessel: ghost"},"status":"error"}
+{"payload":{"message":"unknown vessel: ghost"},"status":"error"}
+{"payload":{"message":"vessel_id must be a string"},"status":"error"}
+{"payload":{"message":"vessel_id must be a string"},"status":"error"}

@@ -1,0 +1,3 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"transit","from":0,"to":2,"arrives_at_tick":7}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"transit","from":0,"to":1,"arrives_at_tick":4}}}}

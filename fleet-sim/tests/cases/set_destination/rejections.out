@@ -1,0 +1,21 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0},"v2":{"state":"idle","location":1}}}}
+{"status":"error","payload":{"message":"vessel_id must be a string"}}
+{"status":"error","payload":{"message":"vessel_id must be a string"}}
+{"status":"error","payload":{"message":"vessel_id must be a string"}}
+{"status":"error","payload":{"message":"vessel_id must be a string"}}
+{"status":"error","payload":{"message":"unknown vessel: v3"}}
+{"status":"error","payload":{"message":"unknown vessel: V1"}}
+{"status":"error","payload":{"message":"unknown vessel: "}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination must be an integer"}}
+{"status":"error","payload":{"message":"destination 3 is out of range (0-2)"}}
+{"status":"error","payload":{"message":"destination -1 is out of range (0-2)"}}
+{"status":"error","payload":{"message":"destination 2147483648 is out of range (0-2)"}}
+{"status":"error","payload":{"message":"destination -9223372036854775808 is out of range (0-2)"}}
+{"status":"error","payload":{"message":"destination 18446744073709551615 is out of range (0-2)"}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0},"v2":{"state":"idle","location":1}}}}

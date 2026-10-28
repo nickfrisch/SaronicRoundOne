@@ -1,0 +1,12 @@
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{"v1":{"cargo":[],"location":0,"state":"docked"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{"v1":{"cargo":[],"location":0,"state":"docked"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"message":"vessel v1 is not docked"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":1,"vessels":{"v1":{"cargo":[],"location":0,"state":"docked"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"message":"vessel v1 is not idle"},"status":"error"}
+{"payload":{"message":"vessel v1 is not idle"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":1,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":1,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"message":"vessel v1 is not idle"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":2,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":2,"vessels":{"v1":{"arrives_at_tick":6,"cargo":[],"from":0,"state":"transit","to":1},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}

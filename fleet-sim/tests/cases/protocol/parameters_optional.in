@@ -1,0 +1,8 @@
+# "parameters" may be omitted entirely for commands that take none; extra keys are ignored.
+{"command": "init", "parameters": {"travel_times": [[0,2],[2,0]], "vessels": [{"id": "v1", "location": 0}], "extra": true}}
+{"command": "tick"}
+{"command": "get_state"}
+{"command": "tick", "parameters": {"unexpected": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1, "speed": 99}, "extra": "ignored"}
+# set_destination with no parameters at all
+{"command": "set_destination"}

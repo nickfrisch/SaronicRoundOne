@@ -1,0 +1,5 @@
+# 1x1 world: a single location, so the only possible "move" is staying put.
+{"command": "init", "parameters": {"travel_times": [[0]], "vessels": [{"id": "only", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "only", "destination": 0}}
+{"command": "set_destination", "parameters": {"vessel_id": "only", "destination": 1}}
+{"command": "tick", "parameters": {}}

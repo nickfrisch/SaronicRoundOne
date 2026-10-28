@@ -1,0 +1,10 @@
+# Later commands and ticks never change an already-recorded tick.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "get_state_at", "parameters": {"tick": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "get_state_at", "parameters": {"tick": 1}}
+{"command": "get_state_at", "parameters": {"tick": 2}}

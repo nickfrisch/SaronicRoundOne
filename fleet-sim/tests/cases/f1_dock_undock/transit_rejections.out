@@ -1,0 +1,12 @@
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":2,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"arrives_at_tick":3,"cargo":[],"from":2,"state":"transit","to":1}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":1,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"arrives_at_tick":3,"cargo":[],"from":2,"state":"transit","to":1}}},"status":"ok"}
+{"payload":{"message":"vessel v2 is not idle"},"status":"error"}
+{"payload":{"message":"vessel v2 is not docked"},"status":"error"}
+{"payload":{"message":"vessel v2 is not docked"},"status":"error"}
+{"payload":{"message":"vessel v2 is not docked"},"status":"error"}
+{"payload":{"message":"vessel v2 is not docked"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":2,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"arrives_at_tick":3,"cargo":[],"from":2,"state":"transit","to":1}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":3,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":1,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":3,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":1,"state":"docked"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1},{"cargo":[],"location":2}],"tick":4,"vessels":{"v1":{"cargo":[],"location":0,"state":"idle"},"v2":{"cargo":[],"location":1,"state":"docked"}}},"status":"ok"}

@@ -1,0 +1,7 @@
+# A second init is rejected (even a valid or invalid one) and state is untouched.
+{"command": "init", "parameters": {"travel_times": [[0,4],[4,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "x", "location": 1}]}}
+{"command": "init", "parameters": {}}
+{"command": "get_state", "parameters": {}}

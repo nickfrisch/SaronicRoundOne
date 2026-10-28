@@ -1,0 +1,6 @@
+{"status":"error","payload":{"message":"simulation not initialized; send init first"}}
+{"status":"error","payload":{"message":"simulation not initialized; send init first"}}
+{"status":"error","payload":{"message":"simulation not initialized; send init first"}}
+{"status":"error","payload":{"message":"simulation not initialized; send init first"}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}

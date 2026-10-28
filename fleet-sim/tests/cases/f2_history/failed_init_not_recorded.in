@@ -1,0 +1,5 @@
+# A rejected init records nothing; tick 0 is the state from the init that succeeded.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "bad", "location": 7}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "good", "location": 1}]}}
+{"command": "get_state_at", "parameters": {"tick": 0}}
+{"command": "get_state_at", "parameters": {"tick": 1}}

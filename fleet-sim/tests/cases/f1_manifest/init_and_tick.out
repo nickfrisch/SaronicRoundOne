@@ -1,0 +1,4 @@
+{"payload":{"docks":[{"cargo":[{"destination":2,"quantity":5}],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1},{"cargo":[],"location":2}],"tick":0,"vessels":{}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[{"destination":2,"quantity":5}],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1},{"cargo":[],"location":2}],"tick":1,"vessels":{}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[{"destination":1,"quantity":1},{"destination":2,"quantity":5}],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1},{"cargo":[{"destination":0,"quantity":7}],"location":2}],"tick":2,"vessels":{}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[{"destination":1,"quantity":1},{"destination":2,"quantity":5}],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1},{"cargo":[{"destination":0,"quantity":7}],"location":2}],"tick":2,"vessels":{}},"status":"ok"}

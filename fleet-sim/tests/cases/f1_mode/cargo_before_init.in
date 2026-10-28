@@ -1,0 +1,3 @@
+# Cargo commands before init get the usual "not initialized" error.
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 0}}

@@ -1,0 +1,9 @@
+{"payload":{"message":"dock_throughput must be an array of 2 integers"},"status":"error"}
+{"payload":{"message":"dock_throughput must be an array of 2 integers"},"status":"error"}
+{"payload":{"message":"dock_throughput must be an array of 2 integers"},"status":"error"}
+{"payload":{"message":"dock_throughput[1] must be between 1 and 2147483647, got 0"},"status":"error"}
+{"payload":{"message":"dock_throughput[1] must be between 1 and 2147483647, got -1"},"status":"error"}
+{"payload":{"message":"dock_throughput[1] must be an integer"},"status":"error"}
+{"payload":{"message":"dock_throughput[1] must be an integer"},"status":"error"}
+{"payload":{"message":"dock_throughput[1] must be between 1 and 2147483647, got 18446744073709551615"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1}],"tick":0,"vessels":{}},"status":"ok"}

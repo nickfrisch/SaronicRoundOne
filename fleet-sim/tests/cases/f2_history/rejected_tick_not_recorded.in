@@ -1,0 +1,7 @@
+# A tick rejected for a bad manifest does not advance time or add a history entry.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,1], "vessels": [], "cargo_manifest": [{"location": 0, "destination": 1, "quantity": 1}]}}
+{"command": "tick", "parameters": {"cargo_manifest": [{"location": 5, "destination": 1, "quantity": 1}]}}
+{"command": "get_state_at", "parameters": {"tick": 1}}
+{"command": "tick", "parameters": {"cargo_manifest": [{"location": 1, "destination": 0, "quantity": 2}]}}
+{"command": "get_state_at", "parameters": {"tick": 0}}
+{"command": "get_state_at", "parameters": {"tick": 1}}

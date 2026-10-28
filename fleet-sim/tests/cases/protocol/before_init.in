@@ -1,0 +1,9 @@
+# Every non-init command before init is rejected and does not initialize anything.
+{"command": "tick", "parameters": {}}
+{"command": "get_state", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+# unknown commands are also "not initialized" (init gate is checked first)
+{"command": "fly", "parameters": {}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}
+# tick counter was not advanced by the rejected tick above
+{"command": "get_state", "parameters": {}}

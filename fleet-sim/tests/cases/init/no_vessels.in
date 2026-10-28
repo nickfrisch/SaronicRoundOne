@@ -1,0 +1,6 @@
+# Zero vessels is a valid (if boring) world; ticks still advance.
+{"command": "init", "parameters": {"travel_times": [[0,3],[3,0]], "vessels": []}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "get_state", "parameters": {}}

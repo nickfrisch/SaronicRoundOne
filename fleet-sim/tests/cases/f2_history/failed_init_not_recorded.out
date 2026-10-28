@@ -1,0 +1,4 @@
+{"payload":{"message":"vessel bad: location 7 is out of range (0-1)"},"status":"error"}
+{"payload":{"tick":0,"vessels":{"good":{"location":1,"state":"idle"}}},"status":"ok"}
+{"payload":{"tick":0,"vessels":{"good":{"location":1,"state":"idle"}}},"status":"ok"}
+{"payload":{"message":"tick 1 is in the future (current tick: 0)"},"status":"error"}

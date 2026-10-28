@@ -1,0 +1,8 @@
+# Multiple vessels arriving on the same tick (from different origins) all flip to idle together.
+{"command": "init", "parameters": {"travel_times": [[0,2,1],[2,0,3],[1,3,0]], "vessels": [{"id": "a", "location": 0}, {"id": "b", "location": 1}, {"id": "c", "location": 2}]}}
+# a: 0->1 = 2, b: 1->0 = 2 (swap places), c waits one tick then 2->0 = 1
+{"command": "set_destination", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "b", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "c", "destination": 0}}
+{"command": "tick", "parameters": {}}

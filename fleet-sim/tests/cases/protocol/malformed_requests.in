@@ -1,0 +1,24 @@
+# Requests that are valid JSON but not valid commands. Each still yields exactly one error line.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}
+# not an object
+[1, 2, 3]
+"tick"
+42
+null
+# missing / non-string command
+{}
+{"parameters": {}}
+{"command": 7, "parameters": {}}
+{"command": null}
+{"command": ["tick"]}
+# parameters present but not an object
+{"command": "tick", "parameters": null}
+{"command": "tick", "parameters": []}
+{"command": "get_state", "parameters": "x"}
+# command names are case-sensitive and exact
+{"command": "TICK", "parameters": {}}
+{"command": "tick ", "parameters": {}}
+{"command": "", "parameters": {}}
+{"command": "get_state_now", "parameters": {}}
+# nothing above changed state
+{"command": "get_state", "parameters": {}}

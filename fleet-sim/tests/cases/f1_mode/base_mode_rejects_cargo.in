@@ -1,0 +1,10 @@
+# Without dock_throughput the engine runs the base problem: no cargo fields, cargo commands rejected.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}], "cargo_manifest": [{"location": 0, "destination": 1, "quantity": 1}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "undock", "parameters": {"vessel_id": "v1"}}
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "unload", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "swap", "parameters": {"vessel_id": "v1", "load_destination": 1, "unload_destination": 0}}
+{"command": "tick", "parameters": {"cargo_manifest": []}}
+{"command": "tick", "parameters": {}}

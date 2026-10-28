@@ -1,0 +1,4 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"only":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"only":{"state":"idle","location":0}}}}
+{"status":"error","payload":{"message":"destination 1 is out of range (0-0)"}}
+{"status":"ok","payload":{"tick":1,"vessels":{"only":{"state":"idle","location":0}}}}

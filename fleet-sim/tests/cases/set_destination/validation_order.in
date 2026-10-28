@@ -1,0 +1,9 @@
+# When several things are wrong, the reported error follows a fixed priority:
+# vessel_id type > unknown vessel > not idle > destination.
+{"command": "init", "parameters": {"travel_times": [[0,3],[3,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": 5, "destination": 99}}
+{"command": "set_destination", "parameters": {"vessel_id": "nope", "destination": 99}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}
+# v1 is in transit AND the destination is bad: not-idle wins
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 99}}

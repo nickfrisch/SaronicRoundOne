@@ -1,0 +1,50 @@
+# Many ticks: early history is still exact after the simulation moves on.
+{"command": "init", "parameters": {"travel_times": [[0,3],[3,0]], "vessels": [{"id": "ferry", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "get_state_at", "parameters": {"tick": 0}}
+{"command": "get_state_at", "parameters": {"tick": 1}}
+{"command": "get_state_at", "parameters": {"tick": 3}}
+{"command": "get_state_at", "parameters": {"tick": 4}}
+{"command": "get_state_at", "parameters": {"tick": 15}}
+{"command": "get_state_at", "parameters": {"tick": 29}}
+{"command": "get_state_at", "parameters": {"tick": 30}}
+{"command": "get_state_at", "parameters": {"tick": 31}}

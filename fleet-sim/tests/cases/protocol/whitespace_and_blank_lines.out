@@ -1,0 +1,4 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":1,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"ok","payload":{"tick":2,"vessels":{"v1":{"state":"idle","location":0}}}}

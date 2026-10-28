@@ -1,0 +1,8 @@
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1}],"tick":0,"vessels":{"a":{"cargo":[],"location":0,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1}],"tick":0,"vessels":{"a":{"arrives_at_tick":1,"cargo":[],"from":0,"state":"transit","to":1}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1}],"tick":1,"vessels":{"a":{"cargo":[],"location":1,"state":"idle"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1}],"tick":1,"vessels":{"a":{"cargo":[],"location":1,"state":"docked"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[{"destination":1,"quantity":1}],"location":1}],"tick":2,"vessels":{"a":{"cargo":[],"location":1,"state":"docked"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1}],"tick":2,"vessels":{"a":{"cargo":[{"destination":1,"quantity":1}],"location":1,"state":"docked"}}},"status":"ok"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1}],"tick":3,"vessels":{"a":{"cargo":[{"destination":1,"quantity":1}],"location":1,"state":"docked"}}},"status":"ok"}
+{"payload":{"message":"dock 1 has no cargo for destination 1"},"status":"error"}

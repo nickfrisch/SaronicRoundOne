@@ -1,0 +1,8 @@
+# Lines that are not parseable JSON produce an error line and the engine keeps going.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}
+not json
+{"command": "tick"
+{"command": "tick", "parameters": {}} trailing garbage
+{'command': 'tick'}
+{"command": "tick", "parameters": {},}
+{"command": "tick", "parameters": {}}

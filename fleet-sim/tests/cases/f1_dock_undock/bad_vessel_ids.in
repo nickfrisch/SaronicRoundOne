@@ -1,0 +1,8 @@
+# vessel_id validation is shared by every cargo command.
+{"command": "init", "parameters": {"travel_times": [[0,4,7],[4,0,3],[7,3,0]], "dock_throughput": [2,4,1], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 2}]}}
+{"command": "dock", "parameters": {}}
+{"command": "dock", "parameters": {"vessel_id": 1}}
+{"command": "undock", "parameters": {"vessel_id": "ghost"}}
+{"command": "load", "parameters": {"vessel_id": "ghost", "destination": 0}}
+{"command": "unload", "parameters": {"destination": 0}}
+{"command": "swap", "parameters": {"vessel_id": null, "load_destination": 0, "unload_destination": 0}}

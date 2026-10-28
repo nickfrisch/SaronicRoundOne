@@ -1,0 +1,11 @@
+# History holds COMMITTED states: pending commands since the last tick are not visible,
+# even when querying the current tick.
+{"command": "init", "parameters": {"travel_times": [[0,2],[2,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "get_state_at", "parameters": {"tick": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+# every recorded tick, oldest first
+{"command": "get_state_at", "parameters": {"tick": 0}}
+{"command": "get_state_at", "parameters": {"tick": 1}}
+{"command": "get_state_at", "parameters": {"tick": 2}}

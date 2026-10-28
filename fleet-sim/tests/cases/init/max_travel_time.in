@@ -1,0 +1,6 @@
+# The largest accepted travel time (INT_MAX). arrives_at_tick must not overflow.
+{"command": "init", "parameters": {"travel_times": [[0,2147483647],[2147483647,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}

@@ -1,0 +1,10 @@
+# A vessel that reports idle on its arrival tick can be commanded on that same tick, from its NEW location.
+{"command": "init", "parameters": {"travel_times": [[0,2,9],[2,0,3],[9,3,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+# arrived at 1 on tick 2; leg 1->2 takes 3 (not 0->2 = 9)
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}

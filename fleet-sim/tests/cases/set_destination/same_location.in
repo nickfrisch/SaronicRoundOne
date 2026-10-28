@@ -1,0 +1,14 @@
+# Design choice: set_destination to the current location means "stay here".
+# The vessel stays idle, and it cancels any pending set_destination in this window.
+{"command": "init", "parameters": {"travel_times": [[0,3],[3,0]], "vessels": [{"id": "v1", "location": 0}]}}
+# no-op when nothing is pending
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 0}}
+# cancel a pending move
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 0}}
+{"command": "tick", "parameters": {}}
+# re-plan after cancelling, then the move is committed
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "tick", "parameters": {}}
+# while in transit, even "stay at origin" is rejected (vessel is not idle)
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 0}}

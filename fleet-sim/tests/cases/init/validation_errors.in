@@ -1,0 +1,42 @@
+# Every way init can be rejected. A rejected init leaves the engine uninitialized,
+# so each line here is evaluated independently and init can be retried at the end.
+# --- travel_times shape ---
+{"command": "init", "parameters": {"vessels": []}}
+{"command": "init", "parameters": {"travel_times": null, "vessels": []}}
+{"command": "init", "parameters": {"travel_times": {}, "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0,1]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],5], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [0], "vessels": []}}
+# --- travel_times values ---
+{"command": "init", "parameters": {"travel_times": [[0,1.5],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,"1"],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,true],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,null],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[1,1],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,-3]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,0],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[-1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,2147483648],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,99999999999999999999],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[0,18446744073709551615],[1,0]], "vessels": []}}
+{"command": "init", "parameters": {"travel_times": [[18446744073709551615,1],[1,0]], "vessels": []}}
+# --- vessels ---
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": {"id": "v1", "location": 0}}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"location": 0}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": 1, "location": 0}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": ["v1"]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1"}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": "0"}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0.0}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 2}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": -1}]}}
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}, {"id": "v1", "location": 1}]}}
+# a bad vessel late in the list rejects the whole init (no partial state)
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "ok", "location": 0}, {"id": "bad", "location": 9}]}}
+{"command": "get_state", "parameters": {}}
+# finally a good init succeeds
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}

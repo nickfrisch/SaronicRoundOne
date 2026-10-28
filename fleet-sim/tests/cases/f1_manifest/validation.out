@@ -1,0 +1,13 @@
+{"payload":{"message":"cargo_manifest[0]: location 2 is out of range (0-1)"},"status":"error"}
+{"payload":{"message":"cargo_manifest must be an array"},"status":"error"}
+{"payload":{"message":"cargo_manifest[1]: quantity must be between 1 and 2147483647, got 0"},"status":"error"}
+{"payload":{"message":"cargo_manifest[0]: quantity must be between 1 and 2147483647, got 18446744073709551615"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1}],"tick":0,"vessels":{}},"status":"ok"}
+{"payload":{"message":"cargo_manifest[1]: destination -1 is out of range (0-1)"},"status":"error"}
+{"payload":{"message":"cargo_manifest[0]: quantity must be an integer"},"status":"error"}
+{"payload":{"message":"cargo_manifest[0]: quantity must be between 1 and 2147483647, got -2"},"status":"error"}
+{"payload":{"message":"cargo_manifest[0]: quantity must be an integer"},"status":"error"}
+{"payload":{"message":"cargo_manifest[0]: quantity must be between 1 and 2147483647, got 2147483648"},"status":"error"}
+{"payload":{"message":"cargo_manifest[0]: entry must be an object"},"status":"error"}
+{"payload":{"message":"cargo_manifest must be an array"},"status":"error"}
+{"payload":{"docks":[{"cargo":[],"location":0},{"cargo":[],"location":1}],"tick":0,"vessels":{}},"status":"ok"}

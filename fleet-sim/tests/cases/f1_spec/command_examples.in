@@ -1,0 +1,22 @@
+# Per-command examples from the spec: swap, failure messages, and the throughput error.
+{"command": "init", "parameters": {"travel_times": [[0,4,7],[4,0,3],[7,3,0]], "dock_throughput": [2,4,1], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 2}]}}
+{"command": "tick", "parameters": {"cargo_manifest": [{"location": 0, "destination": 2, "quantity": 2}, {"location": 0, "destination": 1, "quantity": 3}]}}
+# load before docking: "not docked"
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "tick", "parameters": {}}
+# committed: v1 carries [2], dock 0 has [1x3, 2x1]. swap load 1 / unload 2 is one op.
+{"command": "swap", "parameters": {"vessel_id": "v1", "load_destination": 1, "unload_destination": 2}}
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 1}}
+# third op at a throughput-2 dock: "transfer of 3 operations exceeds dock throughput of 2 at location 0"
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 1}}
+# but loading the 2 back is accepted: it cancels the swap's unload, so the net change is still 2 loads
+{"command": "load", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "tick", "parameters": {}}
+# undock and the spec's "not docked" failure
+{"command": "undock", "parameters": {"vessel_id": "v2"}}
+{"command": "undock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+{"command": "get_state", "parameters": {}}

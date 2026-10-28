@@ -1,0 +1,15 @@
+# The worked example from the project description, verbatim.
+{"command": "init", "parameters": {"travel_times": [[0, 4, 7], [4, 0, 3], [7, 3, 0]], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 2}]}}
+# send v1 to location 2, then override to location 1 — both valid before tick
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+# tick commits destination 1
+{"command": "tick", "parameters": {}}
+# rejected — v1 is committed to transit since last tick
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+# tick 4: v1 arrives at location 1
+{"command": "tick", "parameters": {}}
+# v1 arrived — can be commanded immediately
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2}}

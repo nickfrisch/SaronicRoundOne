@@ -1,0 +1,8 @@
+# Vessel ids are arbitrary strings: empty, unicode, escapes, numeric-looking, look-alikes are distinct.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "", "location": 0}, {"id": "船", "location": 1}, {"id": "a\"b\\c", "location": 0}, {"id": "1", "location": 1}, {"id": "V1", "location": 0}, {"id": "v1", "location": 1}, {"id": "v1 ", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "船", "destination": 0}}
+{"command": "set_destination", "parameters": {"vessel_id": "a\"b\\c", "destination": 1}}
+# "1" is a string id; the integer 1 is not a valid vessel_id
+{"command": "set_destination", "parameters": {"vessel_id": 1, "destination": 0}}
+{"command": "tick", "parameters": {}}

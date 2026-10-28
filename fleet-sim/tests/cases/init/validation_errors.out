@@ -1,0 +1,35 @@
+{"status":"error","payload":{"message":"init requires a non-empty travel_times array"}}
+{"status":"error","payload":{"message":"init requires a non-empty travel_times array"}}
+{"status":"error","payload":{"message":"init requires a non-empty travel_times array"}}
+{"status":"error","payload":{"message":"init requires a non-empty travel_times array"}}
+{"status":"error","payload":{"message":"travel_times must be an NxN matrix"}}
+{"status":"error","payload":{"message":"travel_times must be an NxN matrix"}}
+{"status":"error","payload":{"message":"travel_times must be an NxN matrix"}}
+{"status":"error","payload":{"message":"travel_times must be an NxN matrix"}}
+{"status":"error","payload":{"message":"travel_times must be an NxN matrix"}}
+{"status":"error","payload":{"message":"travel_times entries must be integers"}}
+{"status":"error","payload":{"message":"travel_times entries must be integers"}}
+{"status":"error","payload":{"message":"travel_times entries must be integers"}}
+{"status":"error","payload":{"message":"travel_times entries must be integers"}}
+{"status":"error","payload":{"message":"travel_times diagonal must be 0"}}
+{"status":"error","payload":{"message":"travel_times diagonal must be 0"}}
+{"status":"error","payload":{"message":"travel_times off-diagonal entries must be non-zero positive"}}
+{"status":"error","payload":{"message":"travel_times off-diagonal entries must be non-zero positive"}}
+{"status":"error","payload":{"message":"travel_times entries must be at most 2147483647"}}
+{"status":"error","payload":{"message":"travel_times entries must be integers"}}
+{"status":"error","payload":{"message":"travel_times entries must be at most 2147483647"}}
+{"status":"error","payload":{"message":"travel_times diagonal must be 0"}}
+{"status":"error","payload":{"message":"init requires a vessels array"}}
+{"status":"error","payload":{"message":"init requires a vessels array"}}
+{"status":"error","payload":{"message":"each vessel requires a string id"}}
+{"status":"error","payload":{"message":"each vessel requires a string id"}}
+{"status":"error","payload":{"message":"each vessel requires a string id"}}
+{"status":"error","payload":{"message":"vessel v1: location must be an integer"}}
+{"status":"error","payload":{"message":"vessel v1: location must be an integer"}}
+{"status":"error","payload":{"message":"vessel v1: location must be an integer"}}
+{"status":"error","payload":{"message":"vessel v1: location 2 is out of range (0-1)"}}
+{"status":"error","payload":{"message":"vessel v1: location -1 is out of range (0-1)"}}
+{"status":"error","payload":{"message":"duplicate vessel id: v1"}}
+{"status":"error","payload":{"message":"vessel bad: location 9 is out of range (0-1)"}}
+{"status":"error","payload":{"message":"simulation not initialized; send init first"}}
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}

@@ -1,0 +1,7 @@
+{"status":"ok","payload":{"tick":0,"vessels":{"v1":{"state":"idle","location":0}}}}
+{"status":"error","payload":{"message":"invalid JSON: ..."}}
+{"status":"error","payload":{"message":"invalid JSON: ..."}}
+{"status":"error","payload":{"message":"invalid JSON: ..."}}
+{"status":"error","payload":{"message":"invalid JSON: ..."}}
+{"status":"error","payload":{"message":"invalid JSON: ..."}}
+{"status":"ok","payload":{"tick":1,"vessels":{"v1":{"state":"idle","location":0}}}}

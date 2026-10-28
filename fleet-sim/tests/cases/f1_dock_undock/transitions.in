@@ -1,0 +1,19 @@
+# dock/undock validity is judged on COMMITTED state; repeats are no-ops; cross-overrides are rejected.
+{"command": "init", "parameters": {"travel_times": [[0,4,7],[4,0,3],[7,3,0]], "dock_throughput": [2,4,1], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 2}]}}
+# dock after dock: no-op
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+# undock after dock (committed idle): rejected
+{"command": "undock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+# committed docked: set_destination and dock are rejected (not idle)
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+# undock after undock: no-op
+{"command": "undock", "parameters": {"vessel_id": "v1"}}
+{"command": "undock", "parameters": {"vessel_id": "v1"}}
+# dock after undock: rejected (committed docked, not idle)
+{"command": "dock", "parameters": {"vessel_id": "v1"}}
+{"command": "tick", "parameters": {}}
+# now idle at 0 and free to move
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}

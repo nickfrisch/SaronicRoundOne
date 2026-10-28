@@ -1,0 +1,9 @@
+# get_state is read-only and idempotent; repeating it never advances time or commits anything.
+{"command": "init", "parameters": {"travel_times": [[0,2],[2,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "get_state", "parameters": {}}
+{"command": "get_state", "parameters": {}}
+{"command": "get_state", "parameters": {}}
+# still committed-idle: re-commanding is still allowed
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 0}}
+{"command": "get_state", "parameters": {}}

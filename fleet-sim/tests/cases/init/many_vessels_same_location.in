@@ -1,0 +1,5 @@
+# Several vessels can share a location and move independently.
+{"command": "init", "parameters": {"travel_times": [[0,1,2],[1,0,1],[2,1,0]], "vessels": [{"id": "a", "location": 1}, {"id": "b", "location": 1}, {"id": "c", "location": 1}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "a", "destination": 0}}
+{"command": "set_destination", "parameters": {"vessel_id": "b", "destination": 2}}
+{"command": "tick", "parameters": {}}

@@ -1,0 +1,7 @@
+# Blank lines produce no output; surrounding whitespace and CRLF endings are tolerated.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "v1", "location": 0}]}}
+
+   
+     {"command": "get_state", "parameters": {}}    
+{   "command"  :  "tick" ,  "parameters" : { }   }
+{"command": "tick", "parameters": {}}

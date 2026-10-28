@@ -1,0 +1,5 @@
+# cargo_manifest on init seeds docks; on tick it lands in the newly committed state. Quantities add up.
+{"command": "init", "parameters": {"travel_times": [[0,1,1],[1,0,1],[1,1,0]], "dock_throughput": [1,1,1], "vessels": [], "cargo_manifest": [{"location": 0, "destination": 2, "quantity": 3}, {"location": 0, "destination": 2, "quantity": 2}, {"location": 1, "destination": 1, "quantity": 1}]}}
+{"command": "tick", "parameters": {"cargo_manifest": []}}
+{"command": "tick", "parameters": {"cargo_manifest": [{"location": 2, "destination": 0, "quantity": 7}, {"location": 0, "destination": 1, "quantity": 1}]}}
+{"command": "get_state", "parameters": {}}

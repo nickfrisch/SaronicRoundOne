@@ -1,0 +1,10 @@
+# Rejected commands leave the planned state exactly as it was (no partial updates).
+{"command": "init", "parameters": {"travel_times": [[0,4],[4,0]], "vessels": [{"id": "v1", "location": 0}, {"id": "v2", "location": 1}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 7}}
+{"command": "set_destination", "parameters": {"vessel_id": "ghost", "destination": 0}}
+{"command": "set_destination", "parameters": {"vessel_id": "v2", "destination": "zero"}}
+{"command": "bogus", "parameters": {}}
+{"command": "init", "parameters": {"travel_times": [[0]], "vessels": []}}
+{"command": "get_state", "parameters": {}}
+{"command": "tick", "parameters": {}}

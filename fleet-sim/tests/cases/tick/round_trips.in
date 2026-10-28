@@ -1,0 +1,10 @@
+# Chained legs: travel, arrive, immediately re-route, repeatedly.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "vessels": [{"id": "ferry", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "set_destination", "parameters": {"vessel_id": "ferry", "destination": 0}}
+{"command": "tick", "parameters": {}}

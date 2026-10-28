@@ -1,0 +1,17 @@
+# Loads need dock inventory; unloads need vessel inventory; destinations are range-checked.
+{"command": "init", "parameters": {"travel_times": [[0,2,3],[2,0,1],[3,1,0]], "dock_throughput": [10,10,10], "vessels": [{"id": "a", "location": 0}, {"id": "b", "location": 0}], "cargo_manifest": [{"location": 0, "destination": 1, "quantity": 3}, {"location": 0, "destination": 2, "quantity": 1}]}}
+{"command": "dock", "parameters": {"vessel_id": "a"}}
+{"command": "dock", "parameters": {"vessel_id": "b"}}
+{"command": "tick", "parameters": {}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 0}}
+{"command": "unload", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 3}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": "1"}}
+{"command": "load", "parameters": {"vessel_id": "a"}}
+{"command": "unload", "parameters": {"vessel_id": "a", "destination": -1}}
+# only one unit of dest 2: a takes it, then b can't
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 2}}
+{"command": "load", "parameters": {"vessel_id": "b", "destination": 2}}
+{"command": "swap", "parameters": {"vessel_id": "b", "load_destination": 1}}
+{"command": "swap", "parameters": {"vessel_id": "b", "load_destination": 1, "unload_destination": 2}}
+{"command": "swap", "parameters": {"vessel_id": "b", "load_destination": 0, "unload_destination": 2}}

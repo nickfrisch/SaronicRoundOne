@@ -1,0 +1,6 @@
+# Validity is judged against COMMITTED state, not planned state:
+# a vessel that is planned-transit (but committed-idle) can still be re-commanded.
+{"command": "init", "parameters": {"travel_times": [[0,4,7],[4,0,3],[7,3,0]], "vessels": [{"id": "v1", "location": 0}]}}
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 2}}
+# planned says transit 0->2, but committed is idle at 0, so this is accepted and computed from 0
+{"command": "set_destination", "parameters": {"vessel_id": "v1", "destination": 1}}

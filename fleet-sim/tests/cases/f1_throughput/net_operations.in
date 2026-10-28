@@ -1,0 +1,15 @@
+# Throughput counts the minimum ops to reach the pending state, not commands issued.
+{"command": "init", "parameters": {"travel_times": [[0,1],[1,0]], "dock_throughput": [1,1], "vessels": [{"id": "a", "location": 0}], "cargo_manifest": [{"location": 0, "destination": 1, "quantity": 3}]}}
+{"command": "dock", "parameters": {"vessel_id": "a"}}
+{"command": "tick", "parameters": {}}
+# load then unload the same cargo nets to 0 ops, so it can be repeated freely
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "unload", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "unload", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "tick", "parameters": {}}
+# a carries [1]. separate unload + load = 1 op (achievable as one swap) at throughput 1
+{"command": "unload", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "load", "parameters": {"vessel_id": "a", "destination": 1}}

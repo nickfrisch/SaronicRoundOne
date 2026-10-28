@@ -1,0 +1,8 @@
+# travel_times need not be symmetric: travel_times[from][to] is used, not [to][from].
+{"command": "init", "parameters": {"travel_times": [[0,2,9],[5,0,1],[3,8,0]], "vessels": [{"id": "a", "location": 0}, {"id": "b", "location": 1}, {"id": "c", "location": 2}]}}
+# a: 0->1 = 2 ; b: 1->0 = 5 ; c: 2->1 = 8
+{"command": "set_destination", "parameters": {"vessel_id": "a", "destination": 1}}
+{"command": "set_destination", "parameters": {"vessel_id": "b", "destination": 0}}
+{"command": "set_destination", "parameters": {"vessel_id": "c", "destination": 1}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}

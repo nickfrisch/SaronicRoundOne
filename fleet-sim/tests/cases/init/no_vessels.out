@@ -1,0 +1,5 @@
+{"status":"ok","payload":{"tick":0,"vessels":{}}}
+{"status":"ok","payload":{"tick":1,"vessels":{}}}
+{"status":"ok","payload":{"tick":2,"vessels":{}}}
+{"status":"error","payload":{"message":"unknown vessel: v1"}}
+{"status":"ok","payload":{"tick":2,"vessels":{}}}

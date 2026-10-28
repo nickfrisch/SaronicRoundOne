@@ -1,0 +1,6 @@
+# Ticking with no pending commands only advances the tick counter.
+{"command": "init", "parameters": {"travel_times": [[0,5],[5,0]], "vessels": [{"id": "v1", "location": 1}]}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "tick", "parameters": {}}
+{"command": "get_state", "parameters": {}}
